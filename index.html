@@ -5,24 +5,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Homepage for web development course project." />
-  <meta name="author" content="Your Name" />
+  <meta name="author" content="RC Maverick Blancaver" />
   <title>Home - Web Dev Project</title>
-  <link rel="stylesheet" href="styles/" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
   <header>
-    <img src="images/" alt="Profile Photo" />
-    <span> My Name </span>
+    <img src="images/492261516_1178313210760636_2598204773663046443_n.jpg" alt="Profile Photo" />
+    <span>RC Maverick Blancaver</span>
   </header>
 
   <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="https://yourchamberproject.example.com">Chamber</a></li>
-        <li><a href="https://yourfinalproject.example.com">Final</a></li>
-        <li><a href="https://github.com/yourusername">GitHub Profile</a></li>
-        <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
+    <button id="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+    <ul id="menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="https://yourchamberproject.example.com">Chamber</a></li>
+      <li><a href="https://yourfinalproject.example.com">Final</a></li>
+      <li><a href="https://github.com/yourusername">GitHub Profile</a></li>
+      <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
     </ul>
   </nav>
 
@@ -30,37 +33,36 @@
     <h1>Home</h1>
 
     <section>
-        <h2>About this site</h2>
-        <p>this page is a course project hompage built using semantic HTML and optimized assets.</p>
-
+      <h2>About this site</h2>
+      <p>This page is a course project homepage built using semantic HTML and optimized assets.</p>
     </section>
 
     <section>
-        <h2>Projects</h2>
-        <p>This page will eventually link to other projects built during the course, such as the Chamber of Commerce site and the final portfolio.</p>
-    </section>
-  
-    <section>
-        <h2>Contact</h2>
-        <p>Links to my GitHub and LinkedIn profiles are available in the navigation menu.</p>
+      <h2>Projects</h2>
+      <p>This page will eventually link to other projects built during the course, such as the Chamber of Commerce site and the final portfolio.</p>
     </section>
 
+    <section>
+      <h2>Contact</h2>
+      <p>Links to my GitHub and LinkedIn profiles are available in the navigation menu.</p>
+    </section>
+
+    <section id="certificate">
+      <h2>Certificate Courses</h2>
+      <div id="course-buttons">
+        <button id="all">All Courses</button>
+        <button id="wdd">WDD Courses</button>
+        <button id="cse">CSE Courses</button>
+      </div>
+      <div id="courses-container"></div>
+      <p>Total Credits: <span id="credit-total">0</span></p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="currentyear"></span> RC Maverick Blancaver - Philippines </p>
+    <p>&copy; <span id="currentyear"></span> RC Maverick Blancaver - Philippines</p>
     <p id="lastModified"></p>
   </footer>
-
-  <script>
-    // Set current year dynamically
-    document.getElementById("currentyear").textContent = new Date().getFullYear();
-
-    // Set last modified date
-    document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
-  </script>
-
 </body>
-
 
 </html>
