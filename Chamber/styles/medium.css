@@ -1,0 +1,8 @@
+/* Medium Screen Styles */
+#members-container.grid-view {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#members-container.list-view {
+  grid-template-columns: 1fr;
+}
