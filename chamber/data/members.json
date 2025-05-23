@@ -1,0 +1,58 @@
+[
+  {
+    "name": "ABC Corp",
+    "address": "123 Main St, Cebu City",
+    "phone": "032-123-4567",
+    "website": "https://abccorp.com",
+    "image": "member1.jpg",
+    "membership": 3
+  },
+  {
+    "name": "XYZ Solutions",
+    "address": "456 Elm St, Cebu City",
+    "phone": "032-987-6543",
+    "website": "https://xyzsolutions.com",
+    "image": "member2.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Tech Innovators",
+    "address": "789 Oak St, Cebu City",
+    "phone": "032-555-1234",
+    "website": "https://techinnovators.com",
+    "image": "member3.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Digital Dreams",
+    "address": "888 Mango Ave, Cebu City",
+    "phone": "032-111-2222",
+    "website": "https://digitaldreams.com",
+    "image": "member4.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Cebu Traders",
+    "address": "789 Banilad, Cebu City",
+    "phone": "032-333-4444",
+    "website": "https://cebutraders.com",
+    "image": "member5.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Eco Solutions",
+    "address": "Green Park, Cebu City",
+    "phone": "032-999-0000",
+    "website": "https://ecosolutions.com",
+    "image": "member6.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Island Works",
+    "address": "Lapu-Lapu, Cebu",
+    "phone": "032-555-6666",
+    "website": "https://islandworks.com",
+    "image": "member7.jpg",
+    "membership": 2
+  }
+]

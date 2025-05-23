@@ -1,0 +1,329 @@
+
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+
+header img {
+  height: 50px;
+  width: 50px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav {
+  background-color: #444;
+}
+
+nav button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  color: white;
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+nav li a:hover,
+nav li a.active {
+  background-color: #666;
+}
+
+main {
+  padding: 1rem;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.view-toggle {
+  margin-bottom: 1rem;
+}
+
+.view-toggle button {
+  margin-right: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.view-toggle button:hover {
+  background-color: #666;
+}
+
+#members-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.member-card {
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.member-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.member-card h3 {
+  margin-top: 0.5rem;
+}
+
+.member-card p {
+  margin: 0.5rem 0;
+}
+
+.member-card a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.member-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav button {
+    display: block;
+  }
+}
+
+
+/* css for grid and list view */
+
+#memberContainer.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+#memberContainer.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.member-card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+}
+
+#memberContainer.list .member-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+#memberContainer.list .member-card img {
+  width: 100px;
+  height: auto;
+}
+
+#memberContainer.grid .member-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+
+header img {
+  height: 50px;
+  width: 50px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav {
+  background-color: #444;
+}
+
+nav button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  color: white;
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+nav li a:hover,
+nav li a.active {
+  background-color: #666;
+}
+
+main {
+  padding: 1rem;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.view-toggle {
+  margin-bottom: 1rem;
+}
+
+.view-toggle button {
+  margin-right: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.view-toggle button:hover {
+  background-color: #666;
+}
+
+#members-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.member-card {
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.member-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.member-card h3 {
+  margin-top: 0.5rem;
+}
+
+.member-card p {
+  margin: 0.5rem 0;
+}
+
+.member-card a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.member-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav button {
+    display: block;
+  }
+}

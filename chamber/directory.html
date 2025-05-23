@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Directory page for the Chamber of Commerce project." />
+  <meta name="author" content="RC Maverick Blancaver" />
+  <title>Chamber Directory</title>
+
+  <link rel="icon" href="images/favicon.ico" />
+  <meta property="og:title" content="Chamber Directory" />
+  <meta property="og:description" content="Explore our member businesses in the Chamber of Commerce." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="/chamber/directory.html" />
+  <meta property="og:type" content="website" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/medium.css" media="(min-width: 32rem)" />
+  <link rel="stylesheet" href="styles/larger.css" media="(min-width: 64rem)" />
+
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Chamber Logo" />
+    <span>RC Maverick Blancaver</span>
+  </header>
+
+  <nav>
+    <button id="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+    <ul id="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="chamber/directory.html" class="active">Directory</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Member Directory</h1>
+    <div class="view-toggle">
+      <button id="gridView">Grid View</button>
+      <button id="listView">List View</button>
+    </div>
+    <section id="memberContainer" class="grid"></section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> RC Maverick Blancaver - Philippines</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
