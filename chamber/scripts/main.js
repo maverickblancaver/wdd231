@@ -35,7 +35,7 @@ async function loadWeather() {
   try {// Replace with your city or detect dynamically
     // Use your own OpenWeatherMap API key here
     const apiKey = '29bfb9eba44106c9b5f8895a7ce7ed98';
-   // const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
     const response = await fetch(url);
     if (!response.ok) throw new Error('Weather data not available');
