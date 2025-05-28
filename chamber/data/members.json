@@ -1,58 +1,20 @@
 [
   {
-    "name": "ABC Corp",
-    "address": "123 Main St, Cebu City",
-    "phone": "032-123-4567",
-    "website": "https://abccorp.com",
-    "image": "member1.jpg",
-    "membership": 3
+    "name": "Sunrise Bakery",
+    "imageurl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80",
+    "description": "Local bakery serving fresh bread and pastries daily.",
+    "websiteurl": "https://sunrisebakery.example.com"
   },
   {
-    "name": "XYZ Solutions",
-    "address": "456 Elm St, Cebu City",
-    "phone": "032-987-6543",
-    "website": "https://xyzsolutions.com",
-    "image": "member2.jpg",
-    "membership": 2
+    "name": "GreenTech Solutions",
+    "imageurl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=400&q=80",
+    "description": "Innovative eco-friendly technology provider.",
+    "websiteurl": "https://greentech.example.com"
   },
   {
-    "name": "Tech Innovators",
-    "address": "789 Oak St, Cebu City",
-    "phone": "032-555-1234",
-    "website": "https://techinnovators.com",
-    "image": "member3.jpg",
-    "membership": 1
-  },
-  {
-    "name": "Digital Dreams",
-    "address": "888 Mango Ave, Cebu City",
-    "phone": "032-111-2222",
-    "website": "https://digitaldreams.com",
-    "image": "member4.jpg",
-    "membership": 3
-  },
-  {
-    "name": "Cebu Traders",
-    "address": "789 Banilad, Cebu City",
-    "phone": "032-333-4444",
-    "website": "https://cebutraders.com",
-    "image": "member5.jpg",
-    "membership": 1
-  },
-  {
-    "name": "Eco Solutions",
-    "address": "Green Park, Cebu City",
-    "phone": "032-999-0000",
-    "website": "https://ecosolutions.com",
-    "image": "member6.jpg",
-    "membership": 2
-  },
-  {
-    "name": "Island Works",
-    "address": "Lapu-Lapu, Cebu",
-    "phone": "032-555-6666",
-    "website": "https://islandworks.com",
-    "image": "member7.jpg",
-    "membership": 2
+    "name": "City Bookstore",
+    "imageurl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80",
+    "description": "Independent bookstore with a wide collection of new and used books.",
+    "websiteurl": "https://citybookstore.example.com"
   }
 ]

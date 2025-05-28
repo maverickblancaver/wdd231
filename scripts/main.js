@@ -17,6 +17,7 @@ const courses = [
 ];
 
 // Display Courses
+
 function displayCourses(list) {
   const container = document.getElementById('courses-container');
   container.innerHTML = '';

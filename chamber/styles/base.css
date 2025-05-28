@@ -327,3 +327,52 @@ footer {
     display: block;
   }
 }
+
+.spotlights {
+  margin: 2rem 0;
+}
+
+.spotlight-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.spotlight-card {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.spotlight-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.spotlight-card h3 {
+  margin: 0.5rem 0;
+}
+
+.spotlight-card a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.spotlight-card a:hover {
+  text-decoration: underline;
+}
+
+.membership.gold {
+  color: goldenrod;
+  font-weight: bold;
+}
+
+.membership.silver {
+  color: silver;
+  font-weight: bold;
+}
