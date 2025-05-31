@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join the Cebu Chamber</title>
+  <meta name="description" content="Join the Cebu Chamber of Commerce and grow your business!" />
+  <meta name="author" content="Your Full Name" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.ico" />
+</head>
+<body>
+  <header>
+    <h1>Cebu Chamber of Commerce</h1>
+    <nav>
+      <button id="hamburgerBtn" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+      <ul id="primary-navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="join-form-section">
+      <h2>Join the Chamber</h2>
+      <form action="thankyou.html" method="get">
+        <label>
+          First Name:
+          <input type="text" name="fname" required title="Enter your first name" autocomplete="given-name" />
+        </label>
+
+        <label>
+          Last Name:
+          <input type="text" name="lname" required title="Enter your last name" autocomplete="family-name" />
+        </label>
+
+        <label>
+          Organizational Title:
+          <input type="text" name="orgtitle" title="Enter your job title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+        </label>
+
+        <label>
+          Email:
+          <input type="email" name="email" required title="Enter a valid email" autocomplete="email" placeholder="example@email.com" />
+        </label>
+
+        <label>
+          Mobile Phone:
+          <input type="tel" name="phone" required title="Enter your phone number" autocomplete="tel" />
+        </label>
+
+        <label>
+          Business/Organization Name:
+          <input type="text" name="orgname" required title="Enter your business name" autocomplete="organization" />
+        </label>
+
+        <label>
+          Membership Level:
+          <select name="membership" required title="Select a membership level">
+            <option value="">--Select a Level--</option>
+            <option value="np">NP Membership (Non-Profit)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>
+          Business Description:
+          <textarea name="description" title="Describe your business"></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp" />
+
+        <input type="submit" value="Join Now" />
+      </form>
+    </section>
+
+    <section class="membership-cards">
+      <div class="card animate" id="np-card">
+        <h3>NP Membership</h3>
+        <p>No fee. Great for nonprofits!</p>
+        <a href="#" data-modal="modal-np">More Info</a>
+      </div>
+      <div class="card animate" id="bronze-card">
+        <h3>Bronze Membership</h3>
+        <p>Basic benefits for small businesses.</p>
+        <a href="#" data-modal="modal-bronze">More Info</a>
+      </div>
+      <div class="card animate" id="silver-card">
+        <h3>Silver Membership</h3>
+        <p>More perks and visibility.</p>
+        <a href="#" data-modal="modal-silver">More Info</a>
+      </div>
+      <div class="card animate" id="gold-card">
+        <h3>Gold Membership</h3>
+        <p>Top-tier perks, spotlight placement!</p>
+        <a href="#" data-modal="modal-gold">More Info</a>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal" id="modal-np">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>NP Membership</h3>
+        <p>Perfect for nonprofit organizations. Enjoy access to chamber events and community support at no cost.</p>
+      </div>
+    </div>
+    <div class="modal" id="modal-bronze">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Bronze Membership</h3>
+        <p>Includes event discounts and newsletter features. Great for startups and small enterprises.</p>
+      </div>
+    </div>
+    <div class="modal" id="modal-silver">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Silver Membership</h3>
+        <p>All bronze benefits plus training sessions and social media highlights.</p>
+      </div>
+    </div>
+    <div class="modal" id="modal-gold">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Gold Membership</h3>
+        <p>Top exposure including homepage spotlights, event sponsorship, and premium visibility.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Cebu Chamber</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>

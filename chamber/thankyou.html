@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Thank You!</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Application Received</h2>
+      <p><strong>First Name:</strong> <span id="fname"></span></p>
+      <p><strong>Last Name:</strong> <span id="lname"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Phone:</strong> <span id="phone"></span></p>
+      <p><strong>Business Name:</strong> <span id="orgname"></span></p>
+      <p><strong>Submitted:</strong> <span id="timestamp"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Cebu Chamber</p>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("fname").textContent = params.get("fname");
+    document.getElementById("lname").textContent = params.get("lname");
+    document.getElementById("email").textContent = params.get("email");
+    document.getElementById("phone").textContent = params.get("phone");
+    document.getElementById("orgname").textContent = params.get("orgname");
+    document.getElementById("timestamp").textContent = params.get("timestamp");
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
