@@ -33,7 +33,7 @@ async function loadWeather() {
   const weatherDiv = document.getElementById('weather-display');
   const lat = 10.3157;
   const lon = 123.8854;
-  const apiKey = 'YOUR_VALID_API_KEY_HERE';
+  const apiKey = '29bfb9eba44106c9b5f8895a7ce7ed98';
 
   try {
     const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly,alerts&units=metric&appid=${apiKey}`;
