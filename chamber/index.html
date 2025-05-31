@@ -3,73 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Chamber of Commerce - Home</title>
+  <title>Chamber of Commerce - Member Spotlights</title>
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <header>
+  <header role="banner">
     <div class="container header-container">
       <h1>Chamber of Commerce</h1>
-      <nav>
+
+      <!-- Hamburger button for mobile nav -->
+      <button id="hamburgerBtn" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu">
+        ☰
+      </button>
+
+      <nav id="primary-navigation" role="navigation" aria-label="Primary Navigation" class="nav-menu">
         <ul>
-          <li><a href="#" aria-current="page">Home</a></li>
-          <li><a href="#">Directory</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#" class="join-btn-header">Join Now</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <!-- Hero Section -->
-    <section class="hero">
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="City skyline" />
-      <div class="hero-text">
-        <h2>Welcome to Our Chamber of Commerce</h2>
-        <p>Supporting local business growth and community development.</p>
-        <a href="#" class="cta-btn">Join the Chamber</a>
-      </div>
+  <main role="main" class="container">
+    <section class="spotlight-section" aria-labelledby="spotlightTitle">
+      <h2 id="spotlightTitle">Member Spotlights</h2>
+      <div id="spotlight-cards" class="spotlight-cards" aria-live="polite"></div>
     </section>
 
-    <!-- Current Events Section -->
-    <section class="current-events">
-      <h2>Current Events</h2>
-      <ul>
-        <li><strong>May 30:</strong> Annual Business Expo at Convention Center</li>
-        <li><strong>June 12:</strong> Networking Breakfast at City Hall</li>
-        <li><strong>July 4:</strong> Independence Day Parade Sponsorship</li>
-      </ul>
+    <section id="weather" aria-labelledby="weatherTitle" class="weather-section">
+      <h2 id="weatherTitle">3-Day Weather Forecast for Cebu City</h2>
+      <div id="weather-display" role="region" aria-live="polite"></div>
     </section>
 
-    <!-- Weather Section -->
-    <section class="weather">
-      <h2>Current Weather</h2>
-      <div id="weather-display">
-        <p>Loading weather...</p>
-      </div>
+    <section id="weather" aria-label="3-day weather forecast">
+      <div id="weather-display"></div>
     </section>
 
-    <!-- Spotlights Section -->
-    <section class="spotlights">
-      <h2>Member Spotlights</h2>
-      <div class="spotlight-cards" id="spotlight-cards">
-        <!-- Spotlights loaded here by JS -->
-      </div>
-    </section>
   </main>
 
-  <footer>
-    <div class="container footer-container">
-      <p>&copy; 2025 Chamber of Commerce. All rights reserved.</p>
-      <nav>
-        <ul>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms</a></li>
-        </ul>
-      </nav>
-    </div>
+  <footer role="contentinfo" class="container footer">
+    <p>&copy; <span id="currentyear"></span> Chamber of Commerce</p>
+    <p id="lastModified"></p>
   </footer>
 
   <script src="scripts/main.js"></script>

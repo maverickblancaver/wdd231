@@ -1,20 +1,51 @@
 [
   {
     "name": "Sunrise Bakery",
+    "membership": 3,
     "imageurl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80",
     "description": "Local bakery serving fresh bread and pastries daily.",
     "websiteurl": "https://sunrisebakery.example.com"
   },
   {
     "name": "GreenTech Solutions",
+    "membership": 2,
     "imageurl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=400&q=80",
-    "description": "Innovative eco-friendly technology provider.",
+    "description": "Innovative eco-friendly technology company.",
     "websiteurl": "https://greentech.example.com"
   },
   {
-    "name": "City Bookstore",
-    "imageurl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80",
-    "description": "Independent bookstore with a wide collection of new and used books.",
-    "websiteurl": "https://citybookstore.example.com"
+    "name": "Oceanic Adventures",
+    "membership": 1,
+    "imageurl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
+    "description": "Adventure tours and water sports in the region.",
+    "websiteurl": "https://oceanicadventures.example.com"
+  },
+  {
+    "name": "TechNova Inc.",
+    "membership": 3,
+    "imageurl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
+    "description": "Cutting-edge software development and IT consulting.",
+    "websiteurl": "https://technova.example.com"
+  },
+  {
+    "name": "FreshFarm Produce",
+    "membership": 2,
+    "imageurl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80",
+    "description": "Organic fruits and vegetables delivered fresh to your door.",
+    "websiteurl": "https://freshfarm.example.com"
+  },
+  {
+    "name": "City Gym & Fitness",
+    "membership": 1,
+    "imageurl": "https://images.unsplash.com/photo-1546484959-f6fdb51b176d?auto=format&fit=crop&w=400&q=80",
+    "description": "State-of-the-art gym with personal training services.",
+    "websiteurl": "https://citygym.example.com"
+  },
+  {
+    "name": "Elegant Events",
+    "membership": 2,
+    "imageurl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80",
+    "description": "Event planning and management for all occasions.",
+    "websiteurl": "https://elegantevents.example.com"
   }
 ]
