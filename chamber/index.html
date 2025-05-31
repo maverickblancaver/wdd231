@@ -1,54 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chamber of Commerce - Member Spotlights</title>
+  <meta name="description" content="Explore the Chamber of Commerce member spotlights featuring Gold and Silver members. Discover local businesses and upcoming events." />
+  <meta name="author" content="Your Name" />
+  <meta property="og:title" content="Chamber of Commerce - Member Spotlights" />
+  <meta property="og:description" content="Discover local businesses and spotlights from our top members, including Gold and Silver tiers." />
+  <meta property="og:image" content="images/og-image.png" />
+  <meta property="og:url" content="https://yourdomain.com/spotlights.html" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="styles/style.css" />
+  <script defer src="scripts/main.js"></script>
 </head>
 <body>
-  <header role="banner">
-    <div class="container header-container">
-      <h1>Chamber of Commerce</h1>
-
-      <!-- Hamburger button for mobile nav -->
-      <button id="hamburgerBtn" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu">
-        ☰
-      </button>
-
-      <nav id="primary-navigation" role="navigation" aria-label="Primary Navigation" class="nav-menu">
-        <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <h1>Chamber of Commerce Member Spotlights</h1>
+    <button id="hamburgerBtn" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu">
+      &#9776;
+    </button>
+    <nav id="primary-navigation" role="navigation" aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main role="main" class="container">
-    <section class="spotlight-section" aria-labelledby="spotlightTitle">
-      <h2 id="spotlightTitle">Member Spotlights</h2>
-      <div id="spotlight-cards" class="spotlight-cards" aria-live="polite"></div>
+  <main>
+    <section id="spotlights" aria-label="Member Spotlights">
+      <h2>Featured Members</h2>
+      <div id="spotlight-cards" class="spotlight-container" tabindex="0">
+        <!-- Spotlight cards loaded by JS -->
+      </div>
     </section>
 
-    <section id="weather" aria-labelledby="weatherTitle" class="weather-section">
-      <h2 id="weatherTitle">3-Day Weather Forecast for Cebu City</h2>
-      <div id="weather-display" role="region" aria-live="polite"></div>
+    <section id="weather" aria-label="3-day Weather Forecast for Cebu City">
+      <h2>Weather Forecast</h2>
+      <div id="weather-display" class="weather-container" tabindex="0">
+        <!-- Weather loaded by JS -->
+      </div>
     </section>
-
-    <section id="weather" aria-label="3-day weather forecast">
-      <div id="weather-display"></div>
-    </section>
-
   </main>
 
-  <footer role="contentinfo" class="container footer">
+  <footer>
     <p>&copy; <span id="currentyear"></span> Chamber of Commerce</p>
     <p id="lastModified"></p>
   </footer>
-
-  <script src="scripts/main.js"></script>
 </body>
 </html>

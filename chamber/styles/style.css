@@ -1,210 +1,165 @@
-/* Reset and base */
-* {
-  box-sizing: border-box;
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #222;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fafafa;
-  color: #222;
-  line-height: 1.6;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-/* Header */
 header {
-  background-color: #121212;
-  color: #e0e0e0;
-  padding: 1rem 0;
-}
-
-.header-container {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-h1 {
-  font-size: 1.8rem;
-  color: #f0f0f0;
-}
-
-/* Navigation */
-.nav-menu ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-menu a {
-  color: #f0f0f0;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.nav-menu a:hover,
-.nav-menu a:focus,
-.nav-menu a[aria-current="page"] {
-  text-decoration: underline;
-  color: #ffd700; /* Gold highlight */
-}
-
-/* Hamburger button for mobile nav */
-#hamburgerBtn {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #f0f0f0;
-  cursor: pointer;
-}
-
-/* Spotlight section */
-.spotlight-section {
-  background-color: #f1f1f1;
-  padding: 2rem;
-  border-radius: 8px;
-  margin-bottom: 3rem;
-}
-
-.spotlight-section h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #222;
-}
-
-.spotlight-cards {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  justify-content: center;
-  align-items: stretch;
-}
-
-.spotlight-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(18, 18, 18, 0.1);
-  padding: 1rem;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.spotlight-card:hover,
-.spotlight-card:focus-within {
-  transform: scale(1.02);
-  outline: 2px solid #ffd700;
-}
-
-.spotlight-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.spotlight-card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
-  color: #111;
-}
-
-.spotlight-card p {
-  font-size: 1rem;
-  color: #444;
-}
-
-.spotlight-card a {
-  display: inline-block;
-  margin-top: 0.75rem;
-  text-decoration: none;
-  color: #0077cc;
-  font-weight: bold;
-}
-
-.spotlight-card a:hover,
-.spotlight-card a:focus {
-  text-decoration: underline;
-}
-
-/* Weather section */
-.weather-section {
-  background-color: #e9f0f7;
-  padding: 2rem;
-  border-radius: 8px;
-}
-
-.weather-section h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  color: #222;
-}
-
-#weather-display {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-.weather-day {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(18, 18, 18, 0.1);
-  padding: 1rem;
-  width: 150px;
-  text-align: center;
-  color: #333;
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
-.weather-day h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
 }
 
-.weather-day img {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 0.5rem;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Footer */
-footer {
-  background-color: #121212;
-  color: #ccc;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
-  font-size: 0.9rem;
+nav ul li a:hover,
+nav ul li a:focus {
+  text-decoration: underline;
+  outline: none;
 }
 
-/* Mobile responsiveness */
+#hamburgerBtn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* Show hamburger on small screens */
 @media (max-width: 768px) {
-  .nav-menu ul {
+  nav ul {
     flex-direction: column;
-    background-color: #121212;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
     display: none;
-    border-radius: 0 0 0 8px;
   }
 
-  .nav-menu.show {
-    display: block;
+  nav ul.show {
+    display: flex;
   }
 
   #hamburgerBtn {
     display: block;
   }
 }
+
+/* Spotlight container */
+.spotlight-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 1rem;
+}
+
+.spotlight-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease;
+}
+
+.spotlight-card:focus,
+.spotlight-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.spotlight-card img {
+  max-width: 100%;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.spotlight-card h3 {
+  margin: 0.5rem 0;
+}
+
+.spotlight-card p {
+  margin: 0.5rem 0 1rem;
+  color: #555;
+}
+
+.spotlight-card a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.spotlight-card a:hover,
+.spotlight-card a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Weather Section */
+.weather-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.weather-day {
+  background-color: #eef6fc;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.weather-day h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.weather-day img {
+  max-width: 80px;
+  height: auto;
+}
+
+.weather-day p {
+  margin: 0.3rem 0;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Color Contrast Fixes: 
+ - Dark text on light backgrounds or vice versa ensured
+ - Links have distinct colors & focus styles
+*/
