@@ -4,10 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Discover Cebu - Chamber of Commerce</title>
-  <meta name="description" content="Explore interesting locations around Cebu City." />
+  <meta name="description" content="Learn about fascinating historical and cultural locations around Cebu. Explore opportunities and attractions as a chamber member or visitor." />
   <meta name="author" content="Maverick Blancaver" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Discover Cebu | Cebu Chamber of Commerce" />
+  <meta property="og:description" content="Discover the best spots in Cebu—from heritage sites to shopping centers. Explore what makes Cebu a thriving location for businesses and tourists." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://maverickblancaver.github.io/wdd231/chamber/discover.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="stylesheet" href="styles/discover.css" />
+
+  <!-- JS -->
+  <script src="scripts/main.js" defer></script>
   <script src="scripts/discover.js" defer></script>
 </head>
 <body>
@@ -18,24 +33,22 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
-        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="discover.html" aria-current="page" class="active">Discover</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <h1>Discover Cebu</h1>
+
     <aside id="visit-message"></aside>
 
     <section class="discover-grid" id="discover-cards">
-      <!-- Cards will be injected here -->
+      <!-- Cards will be inserted here by discover.js -->
     </section>
   </main>
 
   <footer>
-    <script src="scripts/main.js" defer></script>
-    <script src="scripts/discover.js" defer></script>
-
     <p>&copy; <span id="currentyear"></span> Cebu Chamber of Commerce</p>
     <p id="lastModified"></p>
   </footer>
