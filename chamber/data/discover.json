@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "name": "Magellan's Cross",
+      "image": "images/magellans_cross.webp",
+      "address": "P. Burgos St, Cebu City",
+      "description": "A historical landmark marking the arrival of Christianity in the Philippines."
+    },
+    {
+      "name": "Basilica Minore del Santo Niño",
+      "image": "images/santo_nino.webp",
+      "address": "Osmeña Blvd, Cebu City",
+      "description": "The oldest Roman Catholic church in the Philippines."
+    },
+    {
+      "name": "Fort San Pedro",
+      "image": "images/fort_san_pedro.webp",
+      "address": "A. Pigafetta St, Cebu City",
+      "description": "A military defense structure built by the Spanish in the 17th century."
+    },
+    {
+      "name": "Tops Lookout",
+      "image": "images/tops_lookout.webp",
+      "address": "Busay Hills, Cebu City",
+      "description": "Offers a panoramic view of Cebu City and nearby islands."
+    },
+    {
+      "name": "Temple of Leah",
+      "image": "images/temple_of_leah.webp",
+      "address": "Busay, Cebu City",
+      "description": "A Roman-inspired temple built as a symbol of undying love."
+    },
+    {
+      "name": "Cebu Taoist Temple",
+      "image": "images/taoist_temple.webp",
+      "address": "Beverly Hills Subdivision, Cebu City",
+      "description": "A beautiful and colorful temple open to worshippers and tourists alike."
+    },
+    {
+      "name": "Carbon Market",
+      "image": "images/carbon_market.webp",
+      "address": "Cebu City",
+      "description": "The oldest and largest public market in Cebu City."
+    },
+    {
+      "name": "SM Seaside City Cebu",
+      "image": "images/sm_seaside.webp",
+      "address": "South Road Properties, Cebu City",
+      "description": "One of the largest shopping malls in the Philippines."
+    }
+  ]
+}

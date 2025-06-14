@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Cebu - Chamber of Commerce</title>
+  <meta name="description" content="Explore interesting locations around Cebu City." />
+  <meta name="author" content="Maverick Blancaver" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/discover.css" />
+  <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+  <header>
+    <button id="hamburgerBtn" aria-label="Toggle Navigation">☰</button>
+    <nav id="primary-navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Discover Cebu</h1>
+    <aside id="visit-message"></aside>
+
+    <section class="discover-grid" id="discover-cards">
+      <!-- Cards will be injected here -->
+    </section>
+  </main>
+
+  <footer>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+
+    <p>&copy; <span id="currentyear"></span> Cebu Chamber of Commerce</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
