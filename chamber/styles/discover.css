@@ -14,9 +14,9 @@
 }
 
 .card {
-  background: #fff;
+  background: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   padding: 1rem;
   transition: transform 0.3s ease;
 }
@@ -33,20 +33,26 @@
 
 .card h2 {
   margin: 0.5rem 0;
+  color: #222;
 }
 
 .card address,
 .card p {
   margin: 0.5rem 0;
+  color: #333;
 }
 
 .card button {
-  background-color: #008cba;
-  color: white;
+  background-color: #004e7c;
+  color: #fff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #006ea1;
 }
 
 @media (min-width: 641px) {
@@ -66,5 +72,9 @@
       "card1 card2 card3 card4"
       "card5 card6 card7 card8";
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card:hover img {
+    filter: brightness(1.1) contrast(1.05);
   }
 }

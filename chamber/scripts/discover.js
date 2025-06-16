@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
         card.innerHTML = `
           <h2>${item.name}</h2>
           <figure>
-            <img src="${item.image}" alt="${item.name}">
+            <img src="${item.image}" alt="${item.name}" loading="lazy" width="400" height="250">
           </figure>
           <address>${item.address}</address>
           <p>${item.description}</p>
-          <button>Learn More</button>
+          <button aria-label="Learn more about ${item.name}">Learn More</button>
         `;
         container.appendChild(card);
       });
@@ -31,13 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
     message = "Welcome! Let us know if you have any questions.";
   } else {
     const days = Math.floor((today - lastVisit) / (1000 * 60 * 60 * 24));
-    if (days === 0) message = "Back so soon! Awesome!";
-    else message = `You last visited ${days} day${days > 1 ? 's' : ''} ago.`;
+    message = days === 0
+      ? "Back so soon! Awesome!"
+      : `You last visited ${days} day${days > 1 ? 's' : ''} ago.`;
   }
 
   localStorage.setItem('lastVisit', today);
   visitMsg.textContent = message;
 
+  // Footer data
   document.getElementById("currentyear").textContent = new Date().getFullYear();
   document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 });
