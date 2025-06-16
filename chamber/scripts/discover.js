@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <h2>${item.name}</h2>
           <figure>
             <img src="${item.image}" alt="${item.name}" loading="lazy" width="400" height="250">
+            <figcaption>${item.name}</figcaption>
           </figure>
           <address>${item.address}</address>
           <p>${item.description}</p>
@@ -22,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-  // LocalStorage visit logic
   const today = Date.now();
   const lastVisit = localStorage.getItem('lastVisit');
   let message = '';
@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
   localStorage.setItem('lastVisit', today);
   visitMsg.textContent = message;
 
-  // Footer data
   document.getElementById("currentyear").textContent = new Date().getFullYear();
   document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 });

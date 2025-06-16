@@ -9,31 +9,39 @@
     "card6"
     "card7"
     "card8";
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1rem;
 }
 
 .card {
   background: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  padding: 1.2rem;
   transition: transform 0.3s ease;
+  font-size: 1rem;
+  color: #111;
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
-.card figure img {
+.card figure {
+  margin: 0;
+}
+
+.card img {
   width: 100%;
   height: auto;
   border-radius: 6px;
+  display: block;
 }
 
 .card h2 {
   margin: 0.5rem 0;
-  color: #222;
+  font-size: 1.25rem;
+  color: #004b87;
 }
 
 .card address,
@@ -43,16 +51,18 @@
 }
 
 .card button {
-  background-color: #004e7c;
-  color: #fff;
+  background-color: #005fa3;
+  color: #ffffff;
   border: none;
   padding: 0.5rem 1rem;
+  font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 0.5rem;
 }
 
 .card button:hover {
-  background-color: #006ea1;
+  background-color: #0071c5;
 }
 
 @media (min-width: 641px) {
@@ -75,6 +85,6 @@
   }
 
   .card:hover img {
-    filter: brightness(1.1) contrast(1.05);
+    filter: brightness(1.08) contrast(1.05);
   }
 }
