@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Home page for Elite Fitness Hub - a personal training website." />
+  <meta name="author" content="Your Name" />
+  <meta property="og:title" content="Elite Fitness Hub" />
+  <meta property="og:description" content="Get fit with expert coaching and personalized training plans." />
+  <meta property="og:image" content="images/hero.webp" />
+  <title>Elite Fitness Hub</title>
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Elite Fitness Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="images/hero.webp" alt="Fitness hero image" loading="lazy" />
+      <h2>Unleash Your Potential</h2>
+    </section>
+    <section id="programs">
+      <!-- JS dynamically injects program cards here -->
+    </section>
+    <button id="openModal">Learn More</button>
+  </main>
+  <footer>
+    <p>&copy; 2025 Elite Fitness Hub</p>
+    <a href="attribution.html">Attributions</a> |
+    <a href="https://youtube.com/your-demo-video" target="_blank">Project Demo</a>
+  </footer>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <p>This is a modal with detailed information!</p>
+    </div>
+  </div>
+</body>
+</html>
