@@ -4,20 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Discover Cebu - Chamber of Commerce</title>
-  <meta name="description" content="Discover the best places in Cebu—from history to modern attractions." />
+  <meta name="description" content="Learn about historical and cultural sites around Cebu with the Chamber of Commerce." />
   <meta name="author" content="Maverick Blancaver" />
 
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-  <meta property="og:title" content="Discover Cebu | Cebu Chamber" />
-  <meta property="og:description" content="Explore Cebu’s top attractions with the Cebu Chamber of Commerce." />
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Discover Cebu | Cebu Chamber of Commerce" />
+  <meta property="og:description" content="Explore Cebu's top destinations with the Cebu Chamber of Commerce." />
   <meta property="og:image" content="images/og-image.jpg" />
   <meta property="og:url" content="https://maverickblancaver.github.io/wdd231/chamber/discover.html" />
   <meta property="og:type" content="website" />
 
-  <!-- Styles -->
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="stylesheet" href="styles/discover.css" />
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
 </head>
+
 <body>
   <header>
     <button id="hamburgerBtn" aria-label="Toggle Navigation">☰</button>
@@ -34,17 +39,12 @@
   <main>
     <h1>Discover Cebu</h1>
     <aside id="visit-message" aria-live="polite"></aside>
-
-    <section class="discover-grid" id="discover-cards" aria-label="Cebu attractions">
-      <!-- Dynamic cards load here -->
-    </section>
+    <section class="discover-grid" id="discover-cards"></section>
   </main>
 
   <footer>
     <p>&copy; <span id="currentyear"></span> Cebu Chamber of Commerce</p>
     <p id="lastModified"></p>
   </footer>
-
-  <script src="scripts/discover.js" defer></script>
 </body>
 </html>

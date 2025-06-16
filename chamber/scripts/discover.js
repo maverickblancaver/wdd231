@@ -12,12 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
         card.innerHTML = `
           <h2>${item.name}</h2>
           <figure>
-            <img src="${item.image}" alt="${item.name}" loading="lazy" width="400" height="250">
-            <figcaption>${item.name}</figcaption>
+            <img src="${item.image}" alt="${item.name}" loading="lazy">
           </figure>
           <address>${item.address}</address>
           <p>${item.description}</p>
-          <button aria-label="Learn more about ${item.name}">Learn More</button>
+          <button>Learn More</button>
         `;
         container.appendChild(card);
       });
@@ -31,9 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     message = "Welcome! Let us know if you have any questions.";
   } else {
     const days = Math.floor((today - lastVisit) / (1000 * 60 * 60 * 24));
-    message = days === 0
-      ? "Back so soon! Awesome!"
-      : `You last visited ${days} day${days > 1 ? 's' : ''} ago.`;
+    message = days === 0 ? "Back so soon! Awesome!" : `You last visited ${days} day${days > 1 ? 's' : ''} ago.`;
   }
 
   localStorage.setItem('lastVisit', today);
