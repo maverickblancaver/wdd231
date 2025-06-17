@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Home page for Elite Fitness Hub - a personal training website." />
-  <meta name="author" content="Your Name" />
-  <meta property="og:title" content="Elite Fitness Hub" />
-  <meta property="og:description" content="Get fit with expert coaching and personalized training plans." />
-  <meta property="og:image" content="images/hero.webp" />
-  <title>Elite Fitness Hub</title>
-  <link rel="icon" href="images/favicon.ico" />
-  <link rel="stylesheet" href="styles/main.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Peak Performance Fitness, your guide to functional strength and personalized training.">
+  <meta name="author" content="Maverick Blancaver">
+  <meta property="og:title" content="Peak Performance Fitness">
+  <meta property="og:description" content="Train smart. Train strong. Join Peak Performance.">
+  <meta property="og:image" content="images/preview.webp">
+  <meta property="og:type" content="website">
+  <title>Peak Performance Fitness | Home</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
   <script type="module" src="scripts/main.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Elite Fitness Hub</h1>
+    <div class="logo">🏋️‍♂️ Peak Performance</div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
+      <button id="menuBtn">☰</button>
+      <ul id="navList">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="data.html">Programs</a></li>
+        <li><a href="form.html">Sign Up</a></li>
+      </ul>
     </nav>
   </header>
+
   <main>
     <section class="hero">
-      <img src="images/hero.webp" alt="Fitness hero image" loading="lazy" />
-      <h2>Unleash Your Potential</h2>
+      <h1>Unleash Your Strength</h1>
+      <p>Train with purpose. Track your progress. Build real fitness.</p>
+      <a href="form.html" class="cta-button">Join Now</a>
     </section>
-    <section id="programs">
-      <!-- JS dynamically injects program cards here -->
-    </section>
-    <button id="openModal">Learn More</button>
-  </main>
-  <footer>
-    <p>&copy; 2025 Elite Fitness Hub</p>
-    <a href="attribution.html">Attributions</a> |
-    <a href="https://youtube.com/your-demo-video" target="_blank">Project Demo</a>
-  </footer>
 
-  <div id="modal" class="modal hidden">
-    <div class="modal-content">
-      <span id="closeModal" class="close">&times;</span>
-      <p>This is a modal with detailed information!</p>
-    </div>
-  </div>
+    <section class="features">
+      <article>
+        <h2>Custom Programs</h2>
+        <p>Dynamic plans tailored to your goals.</p>
+      </article>
+      <article>
+        <h2>Track Progress</h2>
+        <p>Monitor your stats and improve over time.</p>
+      </article>
+      <article>
+        <h2>Expert Support</h2>
+        <p>Get guidance from certified trainers.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Peak Performance Fitness</p>
+    <p><a href="attributions.html">Attributions</a> | <a href="https://youtube.com/yourvideo" target="_blank">Video Demo</a></p>
+  </footer>
 </body>
 </html>
