@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Coach Mav for personal fitness coaching and guidance.">
+  <meta name="author" content="RC Maverick Blancaver">
+  <meta property="og:title" content="Contact Coach Mav">
+  <meta property="og:description" content="Reach out to Coach Mav to start your fitness journey.">
+  <meta property="og:image" content="images/contact-preview.webp">
+  <meta property="og:url" content="https://yourdomain.com/contact.html">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="module" src="scripts/contact.js" defer></script>
+  <title>Contact - Coach Mav</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.webp" alt="Coach Mav Logo" loading="lazy">
+      <h1>Coach Mav</h1>
+    </div>
+    <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <h2>Contact Coach Mav</h2>
+    <p>Please fill out the form below to get in touch and start your fitness journey.</p>
+
+    <form id="contactForm" action="thankyou.html" method="get">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="goal">Fitness Goal</label>
+      <input type="text" id="goal" name="goal" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Coach Mav | <a href="attributions.html">Attributions</a></p>
+    <a href="https://www.youtube.com/watch?v=your-demo-video" target="_blank" rel="noopener">Demo Video</a>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

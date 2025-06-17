@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+.container, main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header img {
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a.active {
+  border-bottom: 2px solid #00d8a7;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    background: #111;
+    padding: 1rem 0;
+  }
+  nav.show {
+    display: flex;
+  }
+  #menu-toggle {
+    display: block;
+  }
+}
+
+footer {
+  background: #eee;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Spotlight section */
+#spotlight-section {
+  background: #f9f9f9;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.spotlight-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.spotlight-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.spotlight-card h3 {
+  margin: 0.75rem 0 0.5rem;
+  color: #222;
+}
+
+.spotlight-card p {
+  font-size: 0.95rem;
+  color: #555;
+  font-style: italic;
+}

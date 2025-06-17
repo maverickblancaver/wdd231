@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <meta name="description" content="Sign up for a fitness plan with Coach Blaze.">
+  <meta name="author" content="RC Maverick Blancaver">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <h1>Sign Up Form</h1>
+  </header>
+  <main>
+    <form action="thankyou.html" method="get">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="goal">Fitness Goal:</label>
+      <select name="goal" id="goal" required>
+        <option value="">--Please choose--</option>
+        <option value="weightloss">Weight Loss</option>
+        <option value="muscle">Muscle Gain</option>
+        <option value="strength">Strength</option>
+        <option value="overall">Overall Wellness</option>
+      </select>
+
+      <label for="agree">
+        <input type="checkbox" id="agree" name="agree" required>
+        I agree to be contacted for updates.
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>

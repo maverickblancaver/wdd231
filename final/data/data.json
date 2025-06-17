@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Anna Reyes",
+    "image": "images/anna.webp",
+    "testimonial": "Coach Mav helped me achieve results I never thought possible!"
+  },
+  {
+    "name": "Mark Santos",
+    "image": "images/mark.webp",
+    "testimonial": "Personalized coaching made all the difference in my strength journey."
+  },
+  {
+    "name": "Liza Navarro",
+    "image": "images/liza.webp",
+    "testimonial": "Friendly, expert guidance. Highly recommended!"
+  }
+]

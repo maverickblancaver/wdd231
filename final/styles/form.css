@@ -1,0 +1,28 @@
+/* styles/form.css */
+form {
+  max-width: 500px;
+  margin: 2em auto;
+  padding: 1em;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
+label, input, select, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/* styles/thankyou.css */
+main {
+  text-align: center;
+  padding: 3em;
+}
+a {
+  display: inline-block;
+  margin-top: 2em;
+  text-decoration: none;
+  color: #333;
+  background: #eee;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}

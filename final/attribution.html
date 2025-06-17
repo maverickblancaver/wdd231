@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Attributions for images, icons, and resources used on Coach Mav's site." />
+  <meta name="author" content="RC Maverick Blancaver" />
+  <title>Attributions - Coach Mav</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.webp" alt="Coach Mav Logo">
+      <h1>Coach Mav</h1>
+    </div>
+    <button id="menu-toggle">☰</button>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="attributions">
+    <h2>Resource Attributions</h2>
+    <ul>
+      <li>Hero image from <a href="https://unsplash.com" target="_blank">Unsplash</a> - Licensed for free use.</li>
+      <li>Icons from <a href="https://fonts.google.com/icons" target="_blank">Google Material Icons</a>.</li>
+      <li>Exercise photos from <a href="https://pexels.com" target="_blank">Pexels</a>.</li>
+      <li>Weather API by OpenWeatherMap: <a href="https://openweathermap.org" target="_blank">https://openweathermap.org</a></li>
+      <li>Coach data is sample content created for WDD 231 educational purposes.</li>
+    </ul>
+    <p>This site is a student project built for the WDD 231 course and is not for commercial use.</p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Coach Mav | <a href="attributions.html">Attributions</a></p>
+    <a href="https://www.youtube.com/watch?v=your-demo-video" target="_blank">Demo Video</a>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
